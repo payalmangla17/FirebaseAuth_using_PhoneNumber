@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PhoneAuth</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="phone_title_text">Enter phone number</string>
+    <string name="hint_phone_number">Enter phone number</string>
+    <string name="verify_phone_auth">Sign In</string>
+    <string name="resend_phone_auth">Resend OTP</string>
+</resources>

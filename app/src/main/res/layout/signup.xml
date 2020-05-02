@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PhoneAuth"
+    android:background="#4781AF"
+    android:layout_weight="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img"/>
+    <!--  <Button
+          android:id="@+id/Facebook"
+          android:layout_width="150dp"
+          android:layout_toRightOf="@id/Google"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="150dp"
+          android:text="Log in with Facebook"
+          />-->
+
+    <EditText
+        android:id="@+id/Phone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="45dp"
+        android:hint="Enter Phone number"
+
+        android:inputType="phone"
+        />
+
+
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Phone1"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Sign Up"
+        android:background="@drawable/btnstyle"/>
+    <Button
+        android:id="@+id/Resend1"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signUp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Resend OTP"
+        android:background="@drawable/btnstyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+           android:textAlignment="textEnd"
+            android:text="Already have an account?"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_weight=".7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_toRightOf="@id/text"
+            android:text="  Log in"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
